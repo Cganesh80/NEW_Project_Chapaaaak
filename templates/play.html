@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play Your Game</title>
+</head>
+<body>
+    <h1>Play Your Game</h1>
+    <form method="post" action="{{ url_for('play') }}">
+        <label for="no_players">Enter the Number of Players:</label>
+        <input type="number" id="no_players" name="no_players" required min="1">
+        <input type="submit" value="Start Game">
+    </form>
+</body>
+</html>
